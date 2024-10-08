@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <script src="https://kit.fontawesome.com/bdd34d0790.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h2>Bli medlem</h2>
+
+    <div class="formContainer">
+        <form action="https://httpbin.org/anything" method="post">
+            <div class="firstName">
+                <label for="firstName">Förnamn:</label>
+                <input id="firstName" name="firstName" type="text" required>
+            </div>
+
+            <div class="lastName">
+                <label for="lastName">Efternamn:</label>
+                <input id="lastName" name="lastName" type= "text" required>
+            </div>
+
+            <div class="userName">
+                <label for="userName">Användarnamn:</label>
+                <input id="userName" name="userName" type="text" required>
+            </div>
+
+            <div class="password">
+                <label for="password">Lösenord:</label>
+                <input id="password" name="password" type="password" required>
+            </div>
+
+            <div class="email">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+
+            <div class="cats">
+                <label for="catSelect">Favorit kattras? <i class="fa-solid fa-cat"></i> </label>
+                <select name="cats" id="catSelect" required>
+                    <option value="">Välj en kattras:</option>
+                    <option value="maine coon">Maine coon</option>
+                    <option value="bengal">Bengal</option>
+                    <option value="norsk skogskatt">Norsk skogskatt</option>
+                    <option value="ragdoll">Ragdoll</option>
+                    <option value="helig birma">Helig birma</option>
+                </select>
+            </div>
+
+            <div class="acceptTerms">
+                <label for="accept">Jag godkänner villkoren</label>
+                <input id="accept" name="accept" type="checkbox">
+            </div>
+
+            <div class="send">
+                <button type="submit">Skicka</button>
+            </div>
+
+        </form>
+
+
+
+    </div>
+    
+</body>
+</html>

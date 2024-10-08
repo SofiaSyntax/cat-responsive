@@ -1,0 +1,127 @@
+.formContainer form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgba(252, 252, 252, 0.406);
+  font-size: 20px;
+}
+
+body {
+  background-image: url("images/portrait-of-a-cat-lying-in-a-sweater-free-image.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  margin: 5px;
+}
+
+.send {
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.send button {
+  border: 1px;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.lastName {
+  grid-column: 1;
+}
+
+.firstName {
+  grid-column: 1;
+}
+
+.email {
+  grid-column: 1;
+}
+
+.userName {
+  grid-column: 1;
+}
+
+.password {
+  grid-column: 1;
+}
+
+.cats {
+  grid-column: 1;
+}
+
+.acceptTerms {
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="checkbox"] {
+  height: 18px;
+  width: 18px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+select {
+  appearance: none;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+);
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+}
+
+@media (min-width: 768px) {
+  .formContainer form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 30px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+
+  .lastName {
+    grid-column: 2;
+  }
+
+  .password {
+    grid-column: 2;
+  }
+
+  .cats {
+    grid-column: 2;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+}
